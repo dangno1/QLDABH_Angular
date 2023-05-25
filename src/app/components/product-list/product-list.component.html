@@ -1,0 +1,21 @@
+<h2 class="text-center text-4xl">Quan Ly San Pham</h2>
+<button class="border-inherit border p-2 hover:bg-red-300 rounded-lg delete-btn bg-green-400 text-slate-50"><a href="/admin/add">Add Product</a></button>
+<table class="border-separate border border-slate-400">
+    <thead>
+        <tr>
+            <th class="border border-slate-300 w-[5%]">ID</th>
+            <th class="border border-slate-300 w-[10%]">Img</th>
+            <th class="border border-slate-300 w-[28%]">Name</th>
+            <th class="border border-slate-300 w-[10%]">Price</th>
+            <th class="border border-slate-300 w-[10%]">Delete</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr app-product-item
+        *ngFor="let product of products"
+        [product]="product"
+        (onRemove)="deteteProduct(product.id)">
+        </tr>
+        </tbody>
+</table>

@@ -1,0 +1,8 @@
+<td class="border border-slate-300 text-center">{{ product.id }}</td>
+<td class="text-center"><img width="100%" src="{{ product.img }}" /></td>
+<td class="border border-slate-300 text-center">{{ product.name }}</td>
+<td class="border border-slate-300 text-center">{{ product.price }}</td>
+<td class="border border-slate-300 text-center">
+    <button class="btn btn-danger border-inherit border p-3 hover:bg-red-300 rounded-lg delete-btn bg-red-600 text-slate-50" (click)="deteteProduct(product._id)">Delete</button>
+    <a [routerLink]="'edit/' + product.id" class="border-inherit border p-3 hover:bg-red-300 rounded-lg delete-btn bg-blue-600 text-slate-50"><button>Update</button></a>
+</td>

@@ -1,0 +1,73 @@
+.header {
+    width: 1536px;
+    margin: 0 auto;
+    /* margin-top: 13px; */
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: grid;
+    grid-template-columns: 50px 1fr 333px 35px;
+    grid-gap: 50px;
+}
+.logo img{
+    width: 57px;
+    height: 40px;
+}
+.input {
+    margin-top: 6px;
+    height: 38px;
+    border: 1px solid rgb(192, 186, 186);
+    border-radius: 5px;
+}
+
+.input input {
+    margin-top: 10px;
+    border: none;
+    width: 88%;
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.input i{
+    margin-left: 18px;
+    color: gray;
+}
+
+.input button {
+    width: 6%;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(58, 58, 231);
+}
+.menu-1 {
+    margin-left: 16px;
+}
+
+.menu-1 ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu-1 i {
+    font-size: 27px;
+}
+.menu-1 ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 150%;
+    color: rgb(128, 128, 137);
+}
+
+.menu-1 ul li a:hover {
+    color: blue;
+}
+.cart {
+    margin-top: 10px;
+    font-size: 25px;
+    color: blue;
+}
+
+.body {
+    background-color: #fcf7fd;
+}
